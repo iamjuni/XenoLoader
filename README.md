@@ -1,14 +1,9 @@
-<p align="center" width="100%">
-  <img width="720" alt="fidget spinner" src="https://raw.githubusercontent.com/DacoTaco/priiloader/master/Images/Logo.png">
-</p>
 
----
+# What is Xenoloader? #
 
-# What is Priiloader? #
+Xenoloader is a heavily modified version of Priiloader, created by [DacoTaco](http://wiibrew.org/wiki/User:DacoTaco) and BadUncle.<br>It is an application that is loaded prior to the Wii System Menu, which allows it to fix certain kinds of bricks that leave the System Menu in a broken state (like a banner brick), or to add various patches like update blockers or Wiimmfi patches to the System Menu. 
 
-[Priiloader](http://wiibrew.org/wiki/Priiloader) is a heavily modified version of [Preloader 0.30](http://wiibrew.org/wiki/Preloader), created by [DacoTaco](http://wiibrew.org/wiki/User:DacoTaco) and BadUncle.<br>It is an application that is loaded prior to the Wii System Menu, which allows it to fix certain kinds of bricks that leave the System Menu in a broken state (like a banner brick), or to add various patches like update blockers or Wiimmfi patches to the System Menu. 
-
-**Quick note: Priiloader will _NOT_ save your Wii if you fucked up the System Menu IOS!**  
+**Quick note: Xenoloader will _NOT_ save your Wii if you fucked up the System Menu IOS!**  
 **_(On 4.3 this is IOS80) [See here](http://wiibrew.org/wiki/IOS_History) to check which IOS that is for you._**
 ## What has been changed since Preloader 0.30 base source? #
 
@@ -29,23 +24,10 @@
   * Much much MUCH more...
 
 
-## What do I need to install Priiloader? #
+## What do I need to install Xenoloader? #
 
 **All you need is a way of booting homebrew. (Homebrew Channel recommended)**  
 If you have The Homebrew Channel 1.0.7 or above, you don't need any patched IOS at all!  
 If you don't, then a patched IOS36 is required. (*Although it is recommended to just update the HBC.*)
 
-Priiloader itself needs no hacked IOS at all. (Hell, we recommend using unpatched IOS...)
-
-## Can I contact you guys elsewhere? #
-Yes, you can! You can find me (@DacoTaco) in `#priiloader` and `#wiidev` on efnet.org, or on [Github](https://github.com/DacoTaco). 
-
-## I need more info?
-That is not a real question, but here:
-* [Priiloader FAQ](./docs/FAQ.md)
-* [About Priiloader Hacks](./docs/HACKS.md)
-* [List of Priiloader Hacks](./docs/HACKSLIST.md)
-* [General Priiloader Testing and Hack Creation Discussion](https://github.com/DacoTaco/priiloader/discussions/354)
-
-## ☕Donations
-If you like Priiloader and wish to support me you can donate on [ko-fi](https://ko-fi.com/dacotaco)
+Xenoloader itself needs no hacked IOS at all. (Hell, we recommend using unpatched IOS...)
