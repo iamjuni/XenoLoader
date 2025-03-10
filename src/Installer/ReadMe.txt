@@ -1,22 +1,22 @@
 ---------------------------------------------------------------
-* Priiloader Installer - An installation utiltiy for priiloader *
+* Xenoloader Installer - An installation utiltiy for Xenoloader *
 ---------------------------------------------------------------
 ==========================
 Binary Distribution Notes
 ==========================
 
-This installer/removal tool will install Priiloader
+This installer/removal tool will install Xenoloader
 any previous version and can be installed over the top of an older install. There is also
-a removal option that will restore your system menu and clean all traces of Priiloader
+a removal option that will restore your system menu and clean all traces of Xenoloader
 from your system.
 
 Usage:
 
-Press (+/A) to install or update Priiloader.
-Press (-/Y) to remove Priiloader and restore your system menu.
+Press (+/A) to install or update Xenoloader.
+Press (-/Y) to remove Xenoloader and restore your system menu.
 Press (HOME/Start) to chicken out and quit the installer!
 
-To access Priiloader and configure it please hold (RESET) during the boot cycle.
+To access Xenoloader and configure it please hold (RESET) during the boot cycle.
 
 Requirements:
 
@@ -24,7 +24,7 @@ if run from HBC 1.0.7 and above, no ios patching is needed at all. however, if t
 has failed to get root access of the nand, then IOS36 needs to be fully patched as the installer
 will use that ios instead.
 
-Priiloader itself does not need any ios patching (and we recommend to keep the system menu ios unpatched)
+Xenoloader itself does not need any ios patching (and we recommend to keep the system menu ios unpatched)
 
 
 Disclaimer:
