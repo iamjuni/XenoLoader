@@ -1,7 +1,7 @@
 
 # What is Xenoloader? #
 
-Xenoloader is a heavily modified version of Priiloader, created by [DacoTaco](http://wiibrew.org/wiki/User:DacoTaco) and BadUncle.<br>It is an application that is loaded prior to the Wii System Menu, which allows it to fix certain kinds of bricks that leave the System Menu in a broken state (like a banner brick), or to add various patches like update blockers or Wiimmfi patches to the System Menu. 
+Xenoloader is a updated version of Priiloader, created by [DacoTaco](http://wiibrew.org/wiki/User:DacoTaco) and BadUncle.<br>It is an application that is loaded prior to the Wii System Menu, which allows it to fix certain kinds of bricks that leave the System Menu in a broken state (like a banner brick), or to add various patches like update blockers or Wiimmfi patches to the System Menu. 
 
 **Quick note: Xenoloader will _NOT_ save your Wii if you fucked up the System Menu IOS!**  
 **_(On 4.3 this is IOS80) [See here](http://wiibrew.org/wiki/IOS_History) to check which IOS that is for you._**
