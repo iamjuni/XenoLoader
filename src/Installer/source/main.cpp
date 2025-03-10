@@ -209,9 +209,9 @@ int main(int argc, char **argv)
 	printf("IOS %d rev %d\t%s\r\n\r\n", IOS_GetVersion(), IOS_GetRevision(), isvWii ? "(vWii detected)" : "");
 
 #if RCVERSION > 0
-	printf("\t\tPriiloader v%d.%d.%dRC%d(r0x%08x) Installation/Removal Tool\n\n\n\n", VERSION.major, VERSION.minor, VERSION.patch, VERSION.sub_version, GIT_REV);
+	printf("\t\tXenoloader v%d.%d.%dRC%d(r0x%08x) Installation/Removal Tool\n\n\n\n", VERSION.major, VERSION.minor, VERSION.patch, VERSION.sub_version, GIT_REV);
 #else
-	printf("\t\tPriiloader v%d.%d.%d(r0x%08x) Installation / Removal Tool\n\n\n\n", VERSION.major, VERSION.minor, VERSION.patch, GIT_REV);
+	printf("\t\tXenoloader v%d.%d.%d(r0x%08x) Installation / Removal Tool\n\n\n\n", VERSION.major, VERSION.minor, VERSION.patch, GIT_REV);
 #endif
 
 	printf("\t                   PLEASE READ THIS CAREFULLY\n");
@@ -256,8 +256,8 @@ int main(int argc, char **argv)
 	//wait a bit for the system to settle and have all unexpected events to have happened (if any)
 	sleep(5);
 
-	printf("\r\t         Press (+/A) to install or update Priiloader\r\n");
-	printf("\t    Press (-/Y) to remove Priiloader and restore system menu\r\n");
+	printf("\r\t         Press (+/A) to install or update Xenoloader\r\n");
+	printf("\t    Press (-/Y) to remove Xenoloader and restore system menu\r\n");
 	if( !wii_state.AHBPROT && IOS_GetVersion() != 36 )
 		printf("\t         Hold Down (B) with any above options to use IOS36\r\n");
 	printf("\t    Press (HOME/Start) to chicken out and quit the installer!\r\n\r\n");
@@ -318,8 +318,8 @@ int main(int argc, char **argv)
 #endif
 				action = PriiloaderInstalled() ? InstallerAction::Update : InstallerAction::Install;
 				installMsg = action == InstallerAction::Update 
-					? "Priiloader installation found.\r\nUpdating Priiloader...\r\n"
-					: "Priiloader not found.\r\nInstalling Priiloader...\r\n";
+					? "Xenoloader installation found.\r\nUpdating Xenoloader...\r\n"
+					: "Xenoloader not found.\r\nInstalling Xenoloader...\r\n";
 				printf("%s", installMsg);
 				CopyTicket();
 				WritePriiloader(action);
@@ -332,9 +332,9 @@ int main(int argc, char **argv)
 				break;
 			case InstallerAction::Remove:
 				if(!PriiloaderInstalled())
-					abort("Priiloader not found");
+					abort("Xenoloader not found");
 				
-				printf("Priiloader installation found.\n\r\n");
+				printf("Xenoloader installation found.\n\r\n");
 				RemovePriiloader();
 				PatchTMD(action);
 				DeletePriiloaderFiles(action);
