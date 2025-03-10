@@ -31,3 +31,7 @@ If you have The Homebrew Channel 1.0.7 or above, you don't need any patched IOS 
 If you don't, then a patched IOS36 is required. (*Although it is recommended to just update the HBC.*)
 
 Xenoloader itself needs no hacked IOS at all. (Hell, we recommend using unpatched IOS...)
+
+
+#Contributing
+This repository will accepting contributions (pull requests only).
