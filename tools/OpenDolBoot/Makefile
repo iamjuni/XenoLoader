@@ -17,7 +17,7 @@ SFILES		:=	$(foreach dir,$(SOURCES),$(wildcard $(dir)/*.S))
 INCLUDE		:=	$(foreach dir,$(INCLUDES), -iquote $(CURDIR)/$(dir)) \
 					$(foreach dir,$(LIBDIRS),-I$(dir)/include)
 
-#default commands/settings
+# default commands/settings
 SILENTMSG	=	@echo 
 BIN2S 		=	bin2s
 CFLAGS		=	-Os -s
@@ -25,6 +25,9 @@ CXXFLAGS	= 	-std=c++14
 CC			=	$(PREFIX)gcc
 CXX			=	$(PREFIX)g++
 LD			=	$(PREFIX)ld
+LDFLAGS		=	# Add this line to include any linker flags
+LIBS		=	-lstdc++  # Add this to link against the C++ standard library
+
 ifeq ($(OUTPUT),)
 OUTPUT		:=	$(TARGET)
 endif
@@ -63,4 +66,4 @@ $(NANDLDR_SSRC): $(NANDLDR_PATH)
 
 $(OUTPUT): $(CPPFILES) $(CFILES) $(SFILES) $(NANDLDR_SSRC)
 	@echo $@ ...
-	@$(CXX) $(INCLUDE) $^ -o $@ $(CFLAGS) $(CXXFLAGS)
+	@$(CXX) $(INCLUDE) $^ -o $@ $(CFLAGS) $(CXXFLAGS) $(LIBS)
